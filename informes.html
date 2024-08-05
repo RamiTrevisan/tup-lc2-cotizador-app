@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informes</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/informes.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script defer src="js/informes.js"></script>
+    <script defer src="js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('1cHhCAILz1hb2IPqU');
+    </script>
+</head>
+
+<body class="grid-container">
+    <header>
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <h1>DOLAR MANIA</h1>
+    </header>
+
+    <section class="lateral">
+        <nav id="menuLateral">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Miarchivo.html">Mi Archivo</a></li>
+                <li class="active"><a href="informes.html">Informes</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <div class="slider--inner" id="perfiles">
+                <div class="carta">
+                    <div class="perfil">
+                        <img src="img/perfil.jpeg" alt="Perfil Ricardo">
+                    </div>
+                    <div class="contenido">
+                        <h2>Ricardo</h2>
+                        <p>Me cambió la vida conocerlos. Los mejores</p>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="perfil">
+                        <img src="img/lionel.jpeg" alt="Perfil Lionel">
+                    </div>
+                    <div class="contenido">
+                        <h2>Lionel</h2>
+                        <p>Esta página es espectacular</p>
+                    </div>
+                </div>
+
+                <div class="carta ">
+                    <div class="perfil">
+                        <img src="img/bill.jpeg" alt="Perfil Bill">
+                    </div>
+                    <div class="contenido">
+                        <h2>Bill</h2>
+                        <p>Ahora puedo ver cuánto ahorro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div id="alert-container" class="alert hidden"></div>
+
+        <div class="grilla">
+            <div class="selector">
+                <label for="monedas">Seleccione una moneda:</label>
+                <select name="monedas" id="monedas">
+                    <option value="todas">Todas las Monedas</option>
+                    <option value="dolarOficial">DOLAR OFICIAL</option>
+                    <option value="dolarBlue">DOLAR BLUE</option>
+                    <option value="dolarBolsa">DOLAR BOLSA (MEP)</option>
+                    <option value="dolarLiqui">DOLAR LIQUI (CCL)</option>
+                    <option value="dolarTarjeta">DOLAR TARJETA</option>
+                    <option value="dolarMayorista">DOLAR MAYORISTA</option>
+                    <option value="dolarCripto">DOLAR CRIPTO</option>
+                    <option value="EURO">EURO</option>
+                    <option value="REAL">REAL BRASILEÑO</option>
+                    <option value="CHILENO">PESO CHILENO</option>
+                    <option value="URUGUAYO">PESO URUGUAYO</option>
+                </select>
+                <span class="material-symbols-outlined">filter_alt</span>
+            </div>
+            <div class="grafico">
+                <canvas id="miGrafica"></canvas>
+            </div>
+        </div>
+
+        <div class="compartir">
+            <span class="material-symbols-outlined" id="icono">forward_to_inbox</span>
+            <a href="#" id="compartir-link">
+                <h4 id="comparte">Compartir información</h4>
+            </a>
+        </div>
+
+        <div class="container">
+            <div id="container-title">
+                <div class="title">MONEDA</div>
+                <div class="title">FECHA</div>
+                <div class="title">COMPRA</div>
+                <div class="title">VENTA</div>
+                <div class="title">VARIACIÓN</div>
+            </div>
+
+            <section id="scroll">
+                <div id="container-content">
+                    <!-- Contenido generado dinámicamente -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="compartir" class="bloque hidden">
+        <div class="bloque-content">
+            <form id="form">
+                <div class="field">
+                    <label for="from_name">Nombre</label>
+                    <input type="text" name="from_name" id="from_name" required>
+                </div>
+                <div class="field">
+                    <label for="email_id">Email</label>
+                    <input type="email" name="email_id" id="email_id" required>
+                </div>
+                
+                <input type="submit" id="button" value="Enviar Email">
+                <span class="close material-symbols-outlined">close</span>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <section>
+                <h3>INSTITUCIONAL</h3>
+                <ul>
+                    <li><a href="">¿Quiénes Somos?</a></li>
+                    <li><a href="">Socios Estratégicos</a></li>
+                    <li><a href="">Trabaje con Nosotros</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>ACCESOS</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="miarchivo.html">Mi Archivo</a></li>
+                    <li><a href="informes.html">Informes</a></li>
+                    <li><a href="contacto.html">Contáctenos</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>CONTACTO</h3>
+                <p>Universidad Tecnológica Nacional</p>
+                <p>Zeballos 1341 - S2000BQA</p>
+                <p>Rosario</p>
+                <p>0341-4481871</p>
+            </section>
+            <section>
+                <p><b>Desarrollado por</b></p>
+                <p>Lucas Ruggiero</p>
+                <p>Ramiro Trevisán</p>
+                <p>Juan Martín Masqueda</p>
+                <p>TUP6-2024</p>
+            </section>
+        </div>
+        <p><i>TUP-Cátedra de Laboratorio de Computación 2 - Año 2024</i></p>
+    </footer>
+</body>
+
+</html>

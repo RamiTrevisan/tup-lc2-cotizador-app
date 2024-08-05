@@ -1,0 +1,111 @@
+
+#encabezado{
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    display: grid;
+    background-color: #EBE3D5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+
+}
+#scroll{
+    overflow: auto;
+    height: auto;
+}
+
+#container-title{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));  
+    gap: 8px;
+    background-color: #43766C;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+#container-content{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color:#EBE3D5;
+    
+    
+}
+.element{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    
+    
+
+}
+
+.element > .moneda,
+.element > .compra,
+.element > .venta,
+.element > .accion {
+    font-size: smaller;
+    border-left: solid black 1px;
+    padding-inline-start: 5px; 
+    padding-inline-end: 5px;
+}
+
+.title{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: black;
+    background-color: #43766C;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.fecha{
+    display: grid;
+    width: 100%;
+    
+    background-color: #B0A695;
+
+    padding: 5px;
+}
+
+.moneda{
+    display: 1/5;
+    border-left: solid black;
+}
+
+.compra{
+    display: 1/5;
+    text-align: center;
+    border-left: solid black;
+}
+
+.venta{
+    display: 1/5;
+    text-align: center;
+    border-left: solid black;
+
+}
+
+.accion{
+    display: 1/5;
+    text-align: center;
+    border-left: solid black;
+    color: red;
+
+}
+
+
+h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+h1{
+    text-align: end;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

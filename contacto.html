@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/contacto.css">
+    <script defer src="js/contacto.js"></script>
+    <script defer src="js/common.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+    emailjs.init('1cHhCAILz1hb2IPqU');
+</script>
+</head>
+
+<body class="grid-container">
+    <header>
+        <img class="logo" src="img/logo.png" alt="">
+        <h1>DOLAR MANIA</h1>
+    </header>
+
+    </div>
+    <section class="lateral">
+        <nav id="menuLateral">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Miarchivo.html">Mi Archivo</a></li>
+                <li><a href="informes.html">Informes</a></li>
+                <li class="active"><a href="contacto.html">Contactenos</a></li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <div class="slider--inner" id="perfiles">
+                <div class="carta">
+                    <div class="perfil">
+                        <img src="img/perfil.jpeg" alt="">
+                    </div>
+                    <div class="contenido">
+                        <h2>Ricardo</h2>
+                        <p>Me cambio la vida conocerlos. Los mejores</p>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="perfil">
+                        <img src="img/lionel.jpeg" alt="">
+                    </div>
+                    <div class="contenido">
+                        <h2>Lionel</h2>
+                        <p>Esta pagina es epetacular</p>
+                    </div>
+                </div>
+
+                <div class="carta ">
+                    <div class="perfil">
+                        <img src="img/bill.jpeg" alt="">
+                    </div>
+                    <div class="contenido">
+                        <h2>Bill</h2>
+                        <p>Ahora puedo ver cuanto ahorro</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <main>
+        <div id="alert-container" class="alert hidden"></div>
+        <h2>Contacto Web Cotizaciones</h2>
+        <div class="container">
+            <div class="formulario">
+                <form id="form" action="">
+                    <h3>Formulario de contacto</h3>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="from_name" id="from_name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email_id" id="email_id">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="botonera">
+                        <button type="submit" id="button">Enviar</button>
+                        <button id="reset" type="reset">Limpiar</button>
+                    </div>
+                </form>
+                <p id="error-mensaje"></p>
+            </div>
+            <div class="info">
+                <p>Si tiene alguna sugerencia o inconveniente por favor complete el siguiente formulario y envienoslo.
+                    Lo contactaremos a la brevedad.</p>
+                <p>Esta web esta desarrollada utilizando <a href="https://dolarapi.com/">https://dolarapi.com/</a></p>
+
+                <div class="tarjeta">
+                    <div class="datos">
+                        <h4><b>DATOS DE CONTACTO</b></h4>
+                        <p>Universidad Tecnologica Nacional</p>
+                        <p>ZEBALLOS 1341 - S2000BQA</p>
+                        <p>ROSARIO</p>
+                        <p>0341-4481871</p>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/utnLogo.jpeg" alt="UTN">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <div class="footer">
+            <section>
+                <h3>INSTITUCIONAL</h3>
+                <ul>
+                    <li><a href="">¿Quienes Somos?</a></li>
+                    <li><a href="">Socios Estrategicos</a></li>
+                    <li><a href="">Trabaje con Nosotros</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>ACCESOS</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="miarchivo.html">Mi Archivo</a></li>
+                    <li><a href="informes.html">Informes</a></li>
+                    <li><a href="contacto.html">Contactenos</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>CONTACTO</h3>
+                <p>Universidad Tecnologica Nacional</p>
+                <p>Zeballos 1341 - S2000BQA</p>
+                <p>Rosario</p>
+                <p>0341-4481871</p>
+            </section>
+            <section>
+                <p><b>Desarrollado por</b></p>
+                <p>Lucas Ruggiero</p>
+                <p>Ramiro Trevisán</p>
+                <p>Juan Martín Masqueda</p>
+                <p>TUP6-2024</p>
+            </section>
+        </div>
+
+        <p><i>TUP-Catedra de Laboratorio de Computacion 2 - Año 2024</i></p>
+
+    </footer>
+
+</body>
+
+</html>

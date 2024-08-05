@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolar Mania</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/index.css">
+    <script defer src="js/common.js"></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="grid-container">
+
+    <header>
+        <img class="logo" src="img/logo.png" alt="">
+        <h1>DOLAR MANIA</h1>
+    </header>
+
+    </div>
+    <section class="lateral">
+        <nav id="menuLateral">
+            <ul>
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li><a href="Miarchivo.html">Mi Archivo</a></li>
+                <li><a href="informes.html">Informes</a></li>
+                <li><a href="contacto.html">Contactenos</a></li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <div class="slider--inner" id="perfiles">
+                <div class="carta">
+                    <div class="perfil">
+                        <img src="img/perfil.jpeg" alt="">
+                    </div>
+                    <div class="contenido">
+                        <h2>Ricardo</h2>
+                        <p>Me cambio la vida conocerlos. Los mejores</p>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="perfil">
+                        <img src="img/lionel.jpeg" alt="">
+                    </div>
+                    <div class="contenido">
+                        <h2>Lionel</h2>
+                        <p>Esta pagina es epetacular</p>
+                    </div>
+                </div>
+
+                <div class="carta ">
+                    <div class="perfil">
+                        <img src="img/bill.jpeg" alt="">
+                    </div>
+                    <div class="contenido">
+                        <h2>Bill</h2>
+                        <p>Ahora puedo ver cuanto ahorro</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <main>
+        <div id="alert-container" class="alert hidden"></div>
+        <h2>Pizarra de Cotizaciones</h2>
+
+        <section class="cotizaciones">
+
+            <div class="selector">
+                <label for="monedas">Seleccione una moneda:</label>
+                <select name="monedas" id="monedas">
+                    <option value="todas" selected>Mostrar Todas</option>
+                    <option value="dolarOficial">DOLAR OFICIAL</option>
+                    <option value="dolarBlue">Dolar Blue</option>
+                    <option value="dolarBolsa">Dolar Bolsa (MEP)</option>
+                    <option value="dolarLiqui">Dolar Contado con Liqui (CCL)</option>
+                    <option value="dolarTarjeta">TARJETA</option>
+                    <option value="dolarMayorista">MAYORISTA</option>
+                    <option value="dolarCripto">CRIPTO</option>
+                    <option value="EURO">EURO</option>
+                    <option value="REAL">REAL Brasileño</option>
+                    <option value="CHILENO">Peso CHILENO</option>
+                    <option value="URUGUAYO">Peso URUGUAYO</option>
+
+                </select>
+                <span class="material-symbols-outlined">
+                    filter_alt
+                </span>
+            </div>
+
+        </section>
+
+
+
+
+
+        <div class="container">
+            <div class="card" id="OFICIAL" data-compra="cargando" data-venta="cargando">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>OFICIAL</h2>
+                        <div class="estrella" data-id="OFICIAL">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px"
+                                viewBox="0 0 24 24" width="48px" fill="#e8eaed">
+                                <g>
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="precio">
+                        <div class="compra">
+                            <h5>COMPRA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                        <div class="venta">
+                            <h5>VENTA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="card" id="BLUE" data-compra="cargando" data-venta="cargando">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>BLUE</h2>
+                        <div class="estrella" data-id="BLUE">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px"
+                                viewBox="0 0 24 24" width="48px" fill="#e8eaed">
+                                <g>
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <div class="compra">
+                            <h5>COMPRA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                        <div class="venta">
+                            <h5>VENTA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="MEP" data-compra="cargando" data-venta="cargando">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>MEP</h2>
+                        <div class="estrella" data-id="MEP">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px"
+                                viewBox="0 0 24 24" width="48px" fill="#e8eaed">
+                                <g>
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <div class="compra">
+                            <h5>COMPRA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                        <div class="venta">
+                            <h5>VENTA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="CCL" data-compra="cargando" data-venta="cargando">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>CLL</h2>
+                        <div class="estrella" data-id="CCL">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px"
+                                viewBox="0 0 24 24" width="48px" fill="#e8eaed">
+                                <g>
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <div class="compra">
+                            <h5>COMPRA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                        <div class="venta">
+                            <h5>VENTA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="TARJETA" data-compra="cargando" data-venta="cargando">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>TARJETA</h2>
+                        <div class="estrella" data-id="TARJETA">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px"
+                                viewBox="0 0 24 24" width="48px" fill="#e8eaed">
+                                <g>
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <div class="compra">
+                            <h5>COMPRA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                        <div class="venta">
+                            <h5>VENTA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="MAYORISTA" data-compra="cargando" data-venta="cargando">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>MAYORISTA</h2>
+                        <div class="estrella" data-id="MAYORISTA">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px"
+                                viewBox="0 0 24 24" width="48px" fill="#e8eaed">
+                                <g>
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <div class="compra">
+                            <h5>COMPRA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                        <div class="venta">
+                            <h5>VENTA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="CRIPTO" data-compra="cargando" data-venta="cargando">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>CRIPTO</h2>
+                        <div class="estrella" data-id="CRIPTO">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px"
+                                viewBox="0 0 24 24" width="48px" fill="#e8eaed">
+                                <g>
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <div class="compra">
+                            <h5>COMPRA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                        <div class="venta">
+                            <h5>VENTA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="EURO" data-compra="cargando" data-venta="cargando">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>EURO</h2>
+                        <div class="estrella" data-id="EURO">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px"
+                                viewBox="0 0 24 24" width="48px" fill="#e8eaed">
+                                <g>
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <div class="compra">
+                            <h5>COMPRA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                        <div class="venta">
+                            <h5>VENTA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="REAL" data-compra="cargando" data-venta="cargando">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>REAL</h2>
+                        <div class="estrella" data-id="REAL">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px"
+                                viewBox="0 0 24 24" width="48px" fill="#e8eaed">
+                                <g>
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <div class="compra">
+                            <h5>COMPRA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                        <div class="venta">
+                            <h5>VENTA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="CHILENO" data-compra="cargando" data-venta="cargando">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>CHILENO</h2>
+                        <div class="estrella" data-id="CHILENO">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px"
+                                viewBox="0 0 24 24" width="48px" fill="#e8eaed">
+                                <g>
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <div class="compra">
+                            <h5>COMPRA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                        <div class="venta">
+                            <h5>VENTA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="URUGUAYO" data-compra="cargando" data-venta="cargando">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>URUGUAYO</h2>
+                        <div class="estrella" data-id="URUGUAYO">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px"
+                                viewBox="0 0 24 24" width="48px" fill="#e8eaed">
+                                <g>
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                </g>
+                                <g>
+                                    <path
+                                        d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <div class="compra">
+                            <h5>COMPRA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                        <div class="venta">
+                            <h5>VENTA</h5><br>
+                            <h2>Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+
+
+    </main>
+    <footer>
+        <div class="footer">
+            <section>
+                <h3>INSTITUCIONAL</h3>
+                <ul>
+                    <li><a href="">¿Quienes Somos?</a></li>
+                    <li><a href="">Socios Estrategicos</a></li>
+                    <li><a href="">Trabaje con Nosotros</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>ACCESOS</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="miarchivo.html">Mi Archivo</a></li>
+                    <li><a href="informes.html">Informes</a></li>
+                    <li><a href="contacto.html">Contactenos</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>CONTACTO</h3>
+                <p>Universidad Tecnologica Nacional</p>
+                <p>Zeballos 1341 - S2000BQA</p>
+                <p>Rosario</p>
+                <p>0341-4481871</p>
+            </section>
+            <section>
+                <p><b>Desarrollado por</b></p>
+                <p>Lucas Ruggiero</p>
+                <p>Ramiro Trevisán</p>
+                <p>Juan Martín Masqueda</p>
+                <p>TUP6-2024</p>
+            </section>
+        </div>
+
+        <p><i>TUP-Catedra de Laboratorio de Computacion 2 - Año 2024</i></p>
+
+    </footer>
+
+</body>
+
+</html>
