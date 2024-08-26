@@ -116,7 +116,7 @@ function printTable() {
 
   // Agrega las filas de datos dinámicamente
   document.querySelectorAll("#container-content .fecha-header")
-    .forEach((fechaHeader) => {
+    document.forEach((fechaHeader) => {
       const fecha = fechaHeader.textContent;
       content += `<tr><td colspan="5" style="font-weight:bold;">${fecha}</td></tr>`;
 
